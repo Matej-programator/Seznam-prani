@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Seznam přání</title>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="script.js"></script>
+    
+  </head>
+  <body onload="poNacteni()">
+    <div id="nadpis">
+      <h1>Seznam přání</h1>
+    </div>
+
+    <div id="oblast_registrace">
+      <div class="left">
+        <h2>Registrace uživatele</h2>
+      
+        <input type="text" id="plnejmeno" placeholder="Plné jméno">
+        <input type="text" id="prihljmeno" placeholder="Přihlašovací jméno">
+        <input type="password" id="heslo" placeholder="Heslo">
+        <input type="password" id="heslo2" placeholder="Zopakujte heslo">
+        <br>
+        
+        <input type="button" onclick="registruj()" value="Zaregistrovat">
+        <input type="button" onclick="ukazPrihlaseni()" value="Storno">
+      </div>
+    </div>
+
+    <div id="oblast_prihlaseni">
+      <div class="left">
+        <h2>Přihlášení uživatele</h2>
+        <input type="text" id="loginprihljmeno" placeholder="Přihlašovací jméno">
+        <input type="password" id="loginheslo" placeholder="Heslo">
+        <br>
+        <input type="button" onclick="prihlas()" value="Přihlásit">
+        <input type="button" onclick="ukazRegistraci()" value="Registrace...">
+      </div>
+    </div>
+
+    <div id="oblast_komunikace">
+      <div class="left">
+        <br>
+        <input type="text" id="zprava" placeholder="Zadej přání">
+        <input type="url" id="odkaz" placeholder="Zadej odkaz">
+        <select name="hodnoceni" id="hodnoceni">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <input type="text" id="re" placeholder="Zadej rezervaci">
+        <div class="center">
+          <input type="hidden" id="zpravaid">
+          <div id="vlozit">
+            <input type="button" onclick="odesliZpravu()" value="Odeslat">
+            <input type="button" onclick="odhasitse()" value="Odhlásit se">
+          </div>
+          <div id="upravit">
+            <input type="button" onclick="zmenZpravu()" value="Uprav">
+            <input type="button" onclick="zrusit()" value="Zrušit">
+
+            <div class="res">
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="zpravy">...</div>
+    
+  </body>
+</html>

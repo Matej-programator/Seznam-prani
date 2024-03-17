@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+*:focus {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #DDD;
+    font-size: 16px;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#nadpis {
+    text-align: center;
+    margin: 2% auto;
+}
+
+#oblast_prihlaseni {
+    position: relative;
+    margin: 2% auto;
+    width: 330px;
+    height: 300px;
+    background: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#oblast_registrace {
+    position: relative;
+    margin: 2% auto;
+    width: 330px;
+    height: 400px;
+    background: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#oblast_komunikace {
+    position: relative;
+    margin: 2% auto;
+    width: 330px;
+    height: 300px;
+    background: #FFF;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#zpravy {
+    position: relative;
+    margin: 2% auto;
+    width: 630px;
+    background: #FFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+h2 {
+    margin: 0 0 18px 0;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+input[type="text"],
+input[type="url"],
+select,
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 240px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus,
+select:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="button"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 4px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="button"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="button"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+#seznam {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+#seznam td, #seznam th {
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+  
+#seznam tr:nth-child(even){background-color: #f2f2f2;}
+  
+#seznam tr:hover {background-color: #ddd;}
+  
+#seznam th {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    font-weight: 500;
+    background-color: #16a085;
+    color: white;
+}
